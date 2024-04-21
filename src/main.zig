@@ -22,8 +22,11 @@ fn blindDeconvolution(input_img: []u8, width: usize, height: usize, num_iteratio
 
 /// Estimates the original image given the blurred image and the blur kernel
 fn estimateImage(blurred_image: []u8, kernel: *const [9]f32, width: usize, height: usize) ![]u8 {
+<<<<<<< HEAD
     _ = kernel;
     _ = blurred_image;
+=======
+>>>>>>> 8aad08b (Build updated and fized)
     var estimated_image = try std.mem.alloc(u8, width * height);
     errdefer std.mem.free(estimated_image);
 
@@ -36,11 +39,14 @@ fn estimateImage(blurred_image: []u8, kernel: *const [9]f32, width: usize, heigh
 
 /// Estimates the blur kernel given the blurred image and the estimated original image
 fn estimateKernel(blurred_image: []u8, estimated_image: []u8, width: usize, height: usize, kernel: *[9]f32) !void {
+<<<<<<< HEAD
     _ = kernel;
     _ = height;
     _ = width;
     _ = estimated_image;
     _ = blurred_image;
+=======
+>>>>>>> 8aad08b (Build updated and fized)
     // Implement the kernel estimation algorithm here
     // This can be done using various techniques like L1-regularized optimization
     // or Expectation-Maximization (EM) algorithm

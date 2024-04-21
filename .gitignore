@@ -1,7 +1,4 @@
 zig-cache/
-<<<<<<< HEAD
-=======
 zig-out/
 blurred_image.png
 deblurred_image.png
->>>>>>> 8aad08b (Build updated and fized)
